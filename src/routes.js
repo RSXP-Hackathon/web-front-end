@@ -22,13 +22,13 @@ import Register from "views/examples/Register.jsx";
 import Login from "views/examples/Login.jsx";
 import Tables from "views/examples/Tables.jsx";
 import Icons from "views/examples/Icons.jsx";
-import Empresa from "views/examples/Empresa.jsx";
+import Empresa from "views/Empresa";
 import Mentor from "views/examples/Mentor.jsx";
 import Aluno from "views/examples/Aluno.jsx";
 
 var routes = [
   {
-    path: "/index",
+    path: "/empresa",
     name: "Empresa",
     icon: "ni ni-tv-2 text-primary",
     component: Empresa,
