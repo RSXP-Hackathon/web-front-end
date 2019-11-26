@@ -64,14 +64,14 @@ class AdminNavbar extends React.Component {
                 <DropdownToggle className="pr-0" nav>
                   <Media className="align-items-center">
                     <span className="avatar avatar-sm rounded-circle">
-                      <img
+                      {this.props.usuarioLogado && <img
                         alt="..."
-                        src={require("assets/img/theme/team-1-800x800.jpg")}
-                      />
+                        src={this.props.usuarioLogado.avatar}
+                      />}
                     </span>
                     <Media className="ml-2 d-none d-lg-block">
                       <span className="mb-0 text-sm font-weight-bold">
-                        Joe Rogan
+                        {(this.props.usuarioLogado && this.props.usuarioLogado.name) || ''}
                       </span>
                     </Media>
                   </Media>
