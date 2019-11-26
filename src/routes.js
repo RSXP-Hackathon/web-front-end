@@ -23,6 +23,7 @@ import Login from "views/examples/Login.jsx";
 import Tables from "views/examples/Tables.jsx";
 import Icons from "views/examples/Icons.jsx";
 import Empresa from "views/Empresa";
+import VincularMentor from "views/Empresa/VincularMentor";
 import Eleva from "views/Eleva";
 import Mentor from "views/Mentor";
 import Aluno from "views/examples/Aluno.jsx";
@@ -31,8 +32,7 @@ var routes = {
   eleva: [
     {
       path: "/eleva",
-      group: 'eleva',
-      name: "Dashboard",
+      name: "Eleva",
       icon: "ni ni-tv-2 text-primary",
       component: Eleva,
       layout: "/admin"
@@ -89,25 +89,22 @@ var routes = {
   empresa: [
     {
       path: "/empresa",
-      group: 'empresa',
       name: "Início",
       icon: "ni ni-tv-2 text-primary",
       component: Empresa,
       layout: "/admin"
     },
     {
-      path: "/empresa/teste",
-      group: 'empresa',
-      name: "Empresa",
+      path: "/empresa/novo-mentor",
+      name: "Adotar Mentor",
       icon: "ni ni-tv-2 text-primary",
-      component: Icons,
+      component: VincularMentor,
       layout: "/admin"
     },
   ],
   mentor: [
     {
       path: "/mentor",
-      group: 'mentor',
       name: "Mentor",
       icon: "ni ni-planet text-blue",
       component: Mentor,
@@ -117,7 +114,6 @@ var routes = {
   aluno: [
     {
       path: "/aluno",
-      group: 'aluno',
       name: "Aluno",
       icon: "ni ni-pin-3 text-orange",
       component: Aluno,
