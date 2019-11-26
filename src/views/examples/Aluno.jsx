@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from 'react';
 
 // reactstrap components
 import {
@@ -36,15 +36,15 @@ import {
   Container,
   Row,
   UncontrolledTooltip
-} from "reactstrap";
+} from 'reactstrap';
 // core components
-import Header from "components/Headers/Header.jsx";
+import AlunoHeader from 'components/Headers/AlunoHeader.jsx';
 
 class Tables extends React.Component {
   render() {
     return (
       <>
-        <Header />
+        <AlunoHeader />
         {/* Page content */}
         <Container className="mt--7" fluid>
           {/* Table */}
@@ -52,16 +52,16 @@ class Tables extends React.Component {
             <div className="col">
               <Card className="shadow">
                 <CardHeader className="border-0">
-                  <h3 className="mb-0">Card tables</h3>
+                  <h3 className="mb-0">Eventos</h3>
                 </CardHeader>
                 <Table className="align-items-center table-flush" responsive>
                   <thead className="thead-light">
                     <tr>
-                      <th scope="col">Project</th>
-                      <th scope="col">Budget</th>
-                      <th scope="col">Status</th>
-                      <th scope="col">Users</th>
-                      <th scope="col">Completion</th>
+                      <th scope="col">Evento</th>
+                      <th scope="col">Data</th>
+                      <th scope="col">Mentor</th>
+                      <th scope="col">Local</th>
+                      <th scope="col">Alunos</th>
                       <th scope="col" />
                     </tr>
                   </thead>
@@ -76,7 +76,7 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
-                              src={require("assets/img/theme/bootstrap.jpg")}
+                              src={require('assets/img/theme/bootstrap.jpg')}
                             />
                           </a>
                           <Media>
@@ -104,7 +104,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-1-800x800.jpg")}
+                              src={require('assets/img/theme/team-1-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -122,7 +122,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-2-800x800.jpg")}
+                              src={require('assets/img/theme/team-2-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -140,7 +140,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-3-800x800.jpg")}
+                              src={require('assets/img/theme/team-3-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -158,7 +158,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-4-800x800.jpg")}
+                              src={require('assets/img/theme/team-4-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -226,7 +226,7 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
-                              src={require("assets/img/theme/angular.jpg")}
+                              src={require('assets/img/theme/angular.jpg')}
                             />
                           </a>
                           <Media>
@@ -254,7 +254,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-1-800x800.jpg")}
+                              src={require('assets/img/theme/team-1-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -272,7 +272,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-2-800x800.jpg")}
+                              src={require('assets/img/theme/team-2-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -290,7 +290,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-3-800x800.jpg")}
+                              src={require('assets/img/theme/team-3-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -308,7 +308,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-4-800x800.jpg")}
+                              src={require('assets/img/theme/team-4-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -376,7 +376,7 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
-                              src={require("assets/img/theme/sketch.jpg")}
+                              src={require('assets/img/theme/sketch.jpg')}
                             />
                           </a>
                           <Media>
@@ -404,7 +404,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-1-800x800.jpg")}
+                              src={require('assets/img/theme/team-1-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -422,7 +422,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-2-800x800.jpg")}
+                              src={require('assets/img/theme/team-2-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -440,7 +440,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-3-800x800.jpg")}
+                              src={require('assets/img/theme/team-3-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -458,7 +458,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-4-800x800.jpg")}
+                              src={require('assets/img/theme/team-4-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -526,7 +526,7 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
-                              src={require("assets/img/theme/react.jpg")}
+                              src={require('assets/img/theme/react.jpg')}
                             />
                           </a>
                           <Media>
@@ -554,7 +554,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-1-800x800.jpg")}
+                              src={require('assets/img/theme/team-1-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -572,7 +572,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-2-800x800.jpg")}
+                              src={require('assets/img/theme/team-2-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -590,7 +590,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-3-800x800.jpg")}
+                              src={require('assets/img/theme/team-3-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -608,7 +608,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-4-800x800.jpg")}
+                              src={require('assets/img/theme/team-4-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -676,7 +676,7 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
-                              src={require("assets/img/theme/vue.jpg")}
+                              src={require('assets/img/theme/vue.jpg')}
                             />
                           </a>
                           <Media>
@@ -704,7 +704,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-1-800x800.jpg")}
+                              src={require('assets/img/theme/team-1-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -722,7 +722,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-2-800x800.jpg")}
+                              src={require('assets/img/theme/team-2-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -740,7 +740,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-3-800x800.jpg")}
+                              src={require('assets/img/theme/team-3-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -758,7 +758,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-4-800x800.jpg")}
+                              src={require('assets/img/theme/team-4-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -878,7 +878,7 @@ class Tables extends React.Component {
             <div className="col">
               <Card className="bg-default shadow">
                 <CardHeader className="bg-transparent border-0">
-                  <h3 className="text-white mb-0">Card tables</h3>
+                  <h3 className="text-white mb-0">Vagas</h3>
                 </CardHeader>
                 <Table
                   className="align-items-center table-dark table-flush"
@@ -886,10 +886,10 @@ class Tables extends React.Component {
                 >
                   <thead className="thead-dark">
                     <tr>
-                      <th scope="col">Project</th>
-                      <th scope="col">Budget</th>
-                      <th scope="col">Status</th>
-                      <th scope="col">Users</th>
+                      <th scope="col">Empresa</th>
+                      <th scope="col">Tipo</th>
+                      <th scope="col">Título</th>
+                      <th scope="col">Local</th>
                       <th scope="col">Completion</th>
                       <th scope="col" />
                     </tr>
@@ -905,7 +905,7 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
-                              src={require("assets/img/theme/bootstrap.jpg")}
+                              src={require('assets/img/theme/bootstrap.jpg')}
                             />
                           </a>
                           <Media>
@@ -933,7 +933,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-1-800x800.jpg")}
+                              src={require('assets/img/theme/team-1-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -951,7 +951,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-2-800x800.jpg")}
+                              src={require('assets/img/theme/team-2-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -969,7 +969,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-3-800x800.jpg")}
+                              src={require('assets/img/theme/team-3-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -987,7 +987,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-4-800x800.jpg")}
+                              src={require('assets/img/theme/team-4-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -1055,7 +1055,7 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
-                              src={require("assets/img/theme/angular.jpg")}
+                              src={require('assets/img/theme/angular.jpg')}
                             />
                           </a>
                           <Media>
@@ -1083,7 +1083,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-1-800x800.jpg")}
+                              src={require('assets/img/theme/team-1-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -1101,7 +1101,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-2-800x800.jpg")}
+                              src={require('assets/img/theme/team-2-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -1119,7 +1119,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-3-800x800.jpg")}
+                              src={require('assets/img/theme/team-3-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -1137,7 +1137,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-4-800x800.jpg")}
+                              src={require('assets/img/theme/team-4-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -1205,7 +1205,7 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
-                              src={require("assets/img/theme/sketch.jpg")}
+                              src={require('assets/img/theme/sketch.jpg')}
                             />
                           </a>
                           <Media>
@@ -1233,7 +1233,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-1-800x800.jpg")}
+                              src={require('assets/img/theme/team-1-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -1251,7 +1251,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-2-800x800.jpg")}
+                              src={require('assets/img/theme/team-2-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -1269,7 +1269,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-3-800x800.jpg")}
+                              src={require('assets/img/theme/team-3-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -1287,7 +1287,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-4-800x800.jpg")}
+                              src={require('assets/img/theme/team-4-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -1355,7 +1355,7 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
-                              src={require("assets/img/theme/react.jpg")}
+                              src={require('assets/img/theme/react.jpg')}
                             />
                           </a>
                           <Media>
@@ -1383,7 +1383,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-1-800x800.jpg")}
+                              src={require('assets/img/theme/team-1-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -1401,7 +1401,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-2-800x800.jpg")}
+                              src={require('assets/img/theme/team-2-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -1419,7 +1419,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-3-800x800.jpg")}
+                              src={require('assets/img/theme/team-3-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -1437,7 +1437,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-4-800x800.jpg")}
+                              src={require('assets/img/theme/team-4-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -1505,7 +1505,7 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
-                              src={require("assets/img/theme/vue.jpg")}
+                              src={require('assets/img/theme/vue.jpg')}
                             />
                           </a>
                           <Media>
@@ -1533,7 +1533,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-1-800x800.jpg")}
+                              src={require('assets/img/theme/team-1-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -1551,7 +1551,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-2-800x800.jpg")}
+                              src={require('assets/img/theme/team-2-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -1569,7 +1569,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-3-800x800.jpg")}
+                              src={require('assets/img/theme/team-3-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
@@ -1587,7 +1587,7 @@ class Tables extends React.Component {
                             <img
                               alt="..."
                               className="rounded-circle"
-                              src={require("assets/img/theme/team-4-800x800.jpg")}
+                              src={require('assets/img/theme/team-4-800x800.jpg')}
                             />
                           </a>
                           <UncontrolledTooltip
