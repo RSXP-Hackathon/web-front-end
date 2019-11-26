@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="451px" height="121px" viewBox="0 0 451 121" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-19.000000, -17.000000)" fill="#11CDEF">
+            <g id="Group-2" transform="translate(19.240000, 17.520000)">
+                <path d="M3.2,94.56448 L16.92608,105.6384 L5.7152,114.68352 L3.2,112.6528 L3.2,94.56448 Z M0,87.87136 L0,114.18176 L5.7152,118.79616 L6.1504,118.44416 L22.0224,105.6384 L0,87.87136 L0,87.87136 Z" id="Fill-117"></path>
+                <polygon id="Fill-118" points="25.0816 106.46336 24.064 107.28896 7.7568 120.44096 40.3648 120.44096 41.3824 119.62176 42.4064 118.79616 75.4176 92.15296 75.4176 65.84896 26.0992 105.6384"></polygon>
+                <path d="M3.2,79.72864 L3.2,61.64288 L16.92608,72.7168 L5.71968,81.75872 L3.2,79.72864 Z M6.1504,85.52256 L22.0224,72.71616 L0,54.94976 L0,81.26016 L5.7216,85.86816 L6.1504,85.52256 L6.1504,85.52256 Z" id="Fill-119"></path>
+                <polygon id="Fill-120" points="25.0816 73.54176 24.0576 74.36096 7.7568 87.51296 40.3648 87.51296 41.3824 86.69376 42.4 85.86816 75.4176 59.23136 75.4176 32.92736 26.0992 72.71616"></polygon>
+                <path d="M3.2,28.72128 L16.92544,39.79456 L5.71584,48.83456 L3.2,46.8032 L3.2,28.72128 Z M6.1504,52.59456 L22.0224,39.79456 L0,22.02816 L0,48.3328 L5.7152,52.9472 L6.1504,52.59456 L6.1504,52.59456 Z" id="Fill-121"></path>
+                <polygon id="Fill-122" points="26.0992 39.78816 25.0816 40.61376 7.7568 54.59136 40.3648 54.59136 41.3824 53.7728 42.4064 52.9472 75.4176 26.30976 75.4176 0"></polygon>
+            </g>
+            <text id="ELEVA" font-family="DDCHardware-Regular, DDC Hardware" font-size="123" font-weight="normal">
+                <tspan x="105.31" y="119">ELEVA</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
