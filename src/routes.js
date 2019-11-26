@@ -23,7 +23,7 @@ import Login from "views/examples/Login.jsx";
 import Tables from "views/examples/Tables.jsx";
 import Icons from "views/examples/Icons.jsx";
 import Empresa from "views/examples/Empresa.jsx";
-import Mentor from "views/examples/Mentor.jsx";
+import Mentor from "views/Mentor/Mentor.jsx";
 import Aluno from "views/examples/Aluno.jsx";
 
 var routes = [
