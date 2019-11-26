@@ -55,7 +55,7 @@ class AdminNavbar extends React.Component {
                       <i className="fas fa-search" />
                     </InputGroupText>
                   </InputGroupAddon>
-                  <Input placeholder="Search" type="text" />
+                  <Input placeholder="Busca" type="text" />
                 </InputGroup>
               </FormGroup>
             </Form>
@@ -66,12 +66,12 @@ class AdminNavbar extends React.Component {
                     <span className="avatar avatar-sm rounded-circle">
                       <img
                         alt="..."
-                        src={require("assets/img/theme/team-4-800x800.jpg")}
+                        src={require("assets/img/theme/team-1-800x800.jpg")}
                       />
                     </span>
                     <Media className="ml-2 d-none d-lg-block">
                       <span className="mb-0 text-sm font-weight-bold">
-                        Jessica Jones
+                        Joe Rogan
                       </span>
                     </Media>
                   </Media>

@@ -23,10 +23,18 @@ import Login from "views/examples/Login.jsx";
 import Tables from "views/examples/Tables.jsx";
 import Icons from "views/examples/Icons.jsx";
 import Empresa from "views/Empresa";
+import Eleva from "views/Eleva";
 import Mentor from "views/Mentor";
 import Aluno from "views/examples/Aluno.jsx";
 
 var routes = [
+  {
+    path: "/eleva",
+    name: "Eleva",
+    icon: "ni ni-tv-2 text-primary",
+    component: Eleva,
+    layout: "/admin"
+  },
   {
     path: "/empresa",
     name: "Empresa",
