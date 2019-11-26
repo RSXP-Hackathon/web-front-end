@@ -40,6 +40,7 @@ class Admin extends React.Component {
             path={prop.layout + prop.path}
             component={prop.component}
             key={key}
+            exact
           />
         );
       } else {
@@ -64,7 +65,7 @@ class Admin extends React.Component {
       <>
         <Sidebar
           {...this.props}
-          routes={routes}
+          routes={routes[this.props.routeGroup]}
           logo={{
             innerLink: "/admin/index",
             imgSrc: require("assets/img/brand/argon-react.png"),
@@ -74,9 +75,9 @@ class Admin extends React.Component {
         <div className="main-content" ref="mainContent">
           <AdminNavbar
             {...this.props}
-            brandText={this.getBrandText(this.props.location.pathname)}
+            brandText={this.getBrandText(this.props.location.pathname,  this.props.routeGroup)}
           />
-          <Switch>{this.getRoutes(routes)}</Switch>
+          <Switch>{this.getRoutes(routes[this.props.routeGroup])}</Switch>
           <Container fluid>
             <AdminFooter />
           </Container>

@@ -29,7 +29,10 @@ import AuthLayout from "layouts/Auth.jsx";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/admin" render={props => <AdminLayout {...props} />} />
+      <Route path="/admin/empresa" render={props => <AdminLayout {...props} routeGroup="empresa" />} />
+      <Route path="/admin/mentor" render={props => <AdminLayout {...props} routeGroup="mentor" />} />
+      <Route path="/admin/aluno" render={props => <AdminLayout {...props} routeGroup="aluno" />} />
+      <Route path="/admin" render={props => <AdminLayout {...props} routeGroup="default" />} />
       <Route path="/auth" render={props => <AuthLayout {...props} />} />
       <Redirect from="/" to="/admin/index" />
     </Switch>
