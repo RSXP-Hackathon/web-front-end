@@ -22,8 +22,32 @@ import Register from "views/examples/Register.jsx";
 import Login from "views/examples/Login.jsx";
 import Tables from "views/examples/Tables.jsx";
 import Icons from "views/examples/Icons.jsx";
+import Empresa from "views/examples/Empresa.jsx";
+import Mentor from "views/examples/Mentor.jsx";
+import Aluno from "views/examples/Aluno.jsx";
 
 var routes = [
+  {
+    path: "/index",
+    name: "Empresa",
+    icon: "ni ni-tv-2 text-primary",
+    component: Empresa,
+    layout: "/admin"
+  },
+  {
+    path: "/mentor",
+    name: "Mentor",
+    icon: "ni ni-planet text-blue",
+    component: Mentor,
+    layout: "/admin"
+  },
+  {
+    path: "/aluno",
+    name: "Aluno",
+    icon: "ni ni-pin-3 text-orange",
+    component: Aluno,
+    layout: "/admin"
+  },
   {
     path: "/index",
     name: "Dashboard",
