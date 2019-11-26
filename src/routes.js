@@ -32,8 +32,56 @@ var routes = {
     {
       path: "/eleva",
       group: 'eleva',
-      name: "Eleva",
+      name: "Dashboard",
       icon: "ni ni-tv-2 text-primary",
+      component: Eleva,
+      layout: "/admin"
+    },
+    {
+      path: "/empresas",
+      group: 'eleva',
+      name: "Empresas",
+      icon: "ni ni-building text-primary",
+      component: Eleva,
+      layout: "/admin"
+    },
+    {
+      path: "/eventos",
+      group: 'eleva',
+      name: "Eventos",
+      icon: "ni ni-calendar-grid-58 text-primary",
+      component: Eleva,
+      layout: "/admin"
+    },
+    {
+      path: "/mentores",
+      group: 'eleva',
+      name: "Mentores",
+      icon: "ni ni-hat-3 text-primary",
+      component: Eleva,
+      layout: "/admin"
+    },
+    {
+      path: "/alunos",
+      group: 'eleva',
+      name: "Alunos",
+      icon: "ni ni-user-run text-primary",
+      component: Eleva,
+      layout: "/admin"
+    },
+    {
+      path: "/vagas",
+      group: 'eleva',
+      name: "Vagas",
+      icon: "ni ni-briefcase-24 text-primary",
+      component: Eleva,
+      layout: "/admin"
+    },
+    {
+      path: "/cursos",
+      group: 'eleva',
+      name: "Cursos",
+      icon: "ni ni-books text-primary",
       component: Eleva,
       layout: "/admin"
     },
