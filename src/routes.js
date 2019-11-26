@@ -31,7 +31,7 @@ var routes = {
     {
       path: "/empresa",
       group: 'empresa',
-      name: "Empresa",
+      name: "Início",
       icon: "ni ni-tv-2 text-primary",
       component: Empresa,
       layout: "/admin"
