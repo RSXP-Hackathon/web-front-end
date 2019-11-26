@@ -62,7 +62,7 @@ class Admin extends React.Component {
         return routes[group][i].name;
       }
     }
-    return "Brand";
+    return "Eleva";
   };
   render() {
     return (
