@@ -22,80 +22,99 @@ import Register from "views/examples/Register.jsx";
 import Login from "views/examples/Login.jsx";
 import Tables from "views/examples/Tables.jsx";
 import Icons from "views/examples/Icons.jsx";
-import Empresa from "views/examples/Empresa.jsx";
-import Mentor from "views/examples/Mentor.jsx";
+import Empresa from "views/Empresa";
+import Mentor from "views/Mentor";
 import Aluno from "views/examples/Aluno.jsx";
 
-var routes = [
-  {
-    path: "/index",
-    name: "Empresa",
-    icon: "ni ni-tv-2 text-primary",
-    component: Empresa,
-    layout: "/admin"
-  },
-  {
-    path: "/mentor",
-    name: "Mentor",
-    icon: "ni ni-planet text-blue",
-    component: Mentor,
-    layout: "/admin"
-  },
-  {
-    path: "/aluno",
-    name: "Aluno",
-    icon: "ni ni-pin-3 text-orange",
-    component: Aluno,
-    layout: "/admin"
-  },
-  {
-    path: "/index",
-    name: "Dashboard",
-    icon: "ni ni-tv-2 text-primary",
-    component: Index,
-    layout: "/admin"
-  },
-  {
-    path: "/icons",
-    name: "Icons",
-    icon: "ni ni-planet text-blue",
-    component: Icons,
-    layout: "/admin"
-  },
-  {
-    path: "/maps",
-    name: "Maps",
-    icon: "ni ni-pin-3 text-orange",
-    component: Maps,
-    layout: "/admin"
-  },
-  {
-    path: "/user-profile",
-    name: "User Profile",
-    icon: "ni ni-single-02 text-yellow",
-    component: Profile,
-    layout: "/admin"
-  },
-  {
-    path: "/tables",
-    name: "Tables",
-    icon: "ni ni-bullet-list-67 text-red",
-    component: Tables,
-    layout: "/admin"
-  },
-  {
-    path: "/login",
-    name: "Login",
-    icon: "ni ni-key-25 text-info",
-    component: Login,
-    layout: "/auth"
-  },
-  {
-    path: "/register",
-    name: "Register",
-    icon: "ni ni-circle-08 text-pink",
-    component: Register,
-    layout: "/auth"
-  }
-];
+var routes = {
+  empresa: [
+    {
+      path: "/empresa",
+      group: 'empresa',
+      name: "Empresa",
+      icon: "ni ni-tv-2 text-primary",
+      component: Empresa,
+      layout: "/admin"
+    },
+    {
+      path: "/empresa/teste",
+      group: 'empresa',
+      name: "Empresa",
+      icon: "ni ni-tv-2 text-primary",
+      component: Icons,
+      layout: "/admin"
+    },
+  ],
+  mentor: [
+    {
+      path: "/mentor",
+      group: 'mentor',
+      name: "Mentor",
+      icon: "ni ni-planet text-blue",
+      component: Mentor,
+      layout: "/admin"
+    },
+  ],
+  aluno: [
+    {
+      path: "/aluno",
+      group: 'aluno',
+      name: "Aluno",
+      icon: "ni ni-pin-3 text-orange",
+      component: Aluno,
+      layout: "/admin"
+    },
+  ],
+  default: [
+    {
+      path: "/index",
+      name: "Dashboard",
+      icon: "ni ni-tv-2 text-primary",
+      component: Index,
+      layout: "/admin"
+    },
+    {
+      path: "/icons",
+      name: "Icons",
+      icon: "ni ni-planet text-blue",
+      component: Icons,
+      layout: "/admin"
+    },
+    {
+      path: "/maps",
+      name: "Maps",
+      icon: "ni ni-pin-3 text-orange",
+      component: Maps,
+      layout: "/admin"
+    },
+    {
+      path: "/user-profile",
+      name: "User Profile",
+      icon: "ni ni-single-02 text-yellow",
+      component: Profile,
+      layout: "/admin"
+    },
+    {
+      path: "/tables",
+      name: "Tables",
+      icon: "ni ni-bullet-list-67 text-red",
+      component: Tables,
+      layout: "/admin"
+    },
+    {
+      path: "/login",
+      name: "Login",
+      icon: "ni ni-key-25 text-info",
+      component: Login,
+      layout: "/auth"
+    },
+    {
+      path: "/register",
+      name: "Register",
+      icon: "ni ni-circle-08 text-pink",
+      component: Register,
+      layout: "/auth"
+    }
+  ]
+};
 export default routes;
