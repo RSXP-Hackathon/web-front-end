@@ -59,14 +59,22 @@ class Tables extends React.Component {
                     <tr>
                       <th scope="col">Título</th>
                       <th scope="col">Data</th>
+<<<<<<< HEAD
                       <th scope="col">Mentor</th>
+=======
+                      <th scope="col">Local</th>
+>>>>>>> mentor
                       <th scope="col">Cidade</th>
                       <th scope="col">Alunos</th>
                       <th scope="col" />
                     </tr>
                   </thead>
                   <tbody>
+<<<<<<< HEAD
                     <tr>
+=======
+                  <tr>
+>>>>>>> mentor
                       <th scope="row">
                         <Media className="align-items-center">
                           <a
@@ -88,6 +96,7 @@ class Tables extends React.Component {
                       </th>
                       <td>29 de Janeiro, 2020</td>
                       <td>
+<<<<<<< HEAD
                           <a
                             className="avatar avatar-sm"
                             href="#pablo"
@@ -338,6 +347,16 @@ class Tables extends React.Component {
                               barClassName="bg-success"
                             />
                           </div>
+=======
+                        Escola São José
+                      </td>
+                      <td>
+                        Maceió, AL
+                      </td>
+                      <td>
+                        <div className="d-flex align-items-center">
+                          23
+>>>>>>> mentor
                         </div>
                       </td>
                       <td className="text-right">
@@ -385,16 +404,25 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
+<<<<<<< HEAD
                               src={require("assets/img/theme/sketch.jpg")}
+=======
+                              src={require("assets/img/theme/bootstrap.jpg")}
+>>>>>>> mentor
                             />
                           </a>
                           <Media>
                             <span className="mb-0 text-sm">
+<<<<<<< HEAD
                               Black Dashboard
+=======
+                              Introdução a Web
+>>>>>>> mentor
                             </span>
                           </Media>
                         </Media>
                       </th>
+<<<<<<< HEAD
                       <td>$3,150 USD</td>
                       <td>
                         <Badge color="" className="badge-dot mr-4">
@@ -488,6 +516,18 @@ class Tables extends React.Component {
                               barClassName="bg-danger"
                             />
                           </div>
+=======
+                      <td>29 de Janeiro, 2020</td>
+                      <td>
+                        Escola São José
+                      </td>
+                      <td>
+                        Maceió, AL
+                      </td>
+                      <td>
+                        <div className="d-flex align-items-center">
+                          23
+>>>>>>> mentor
                         </div>
                       </td>
                       <td className="text-right">
@@ -535,16 +575,25 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
+<<<<<<< HEAD
                               src={require("assets/img/theme/react.jpg")}
+=======
+                              src={require("assets/img/theme/bootstrap.jpg")}
+>>>>>>> mentor
                             />
                           </a>
                           <Media>
                             <span className="mb-0 text-sm">
+<<<<<<< HEAD
                               React Material Dashboard
+=======
+                              Introdução a Web
+>>>>>>> mentor
                             </span>
                           </Media>
                         </Media>
                       </th>
+<<<<<<< HEAD
                       <td>$4,400 USD</td>
                       <td>
                         <Badge color="" className="badge-dot">
@@ -638,6 +687,18 @@ class Tables extends React.Component {
                               barClassName="bg-info"
                             />
                           </div>
+=======
+                      <td>29 de Janeiro, 2020</td>
+                      <td>
+                        Escola São José
+                      </td>
+                      <td>
+                        Maceió, AL
+                      </td>
+                      <td>
+                        <div className="d-flex align-items-center">
+                          23
+>>>>>>> mentor
                         </div>
                       </td>
                       <td className="text-right">
@@ -685,16 +746,25 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
+<<<<<<< HEAD
                               src={require("assets/img/theme/vue.jpg")}
+=======
+                              src={require("assets/img/theme/bootstrap.jpg")}
+>>>>>>> mentor
                             />
                           </a>
                           <Media>
                             <span className="mb-0 text-sm">
+<<<<<<< HEAD
                               Vue Paper UI Kit PRO
+=======
+                              Introdução a Web
+>>>>>>> mentor
                             </span>
                           </Media>
                         </Media>
                       </th>
+<<<<<<< HEAD
                       <td>$2,200 USD</td>
                       <td>
                         <Badge color="" className="badge-dot mr-4">
@@ -788,6 +858,18 @@ class Tables extends React.Component {
                               barClassName="bg-success"
                             />
                           </div>
+=======
+                      <td>29 de Janeiro, 2020</td>
+                      <td>
+                        Escola São José
+                      </td>
+                      <td>
+                        Maceió, AL
+                      </td>
+                      <td>
+                        <div className="d-flex align-items-center">
+                          23
+>>>>>>> mentor
                         </div>
                       </td>
                       <td className="text-right">
@@ -878,6 +960,7 @@ class Tables extends React.Component {
                       </PaginationItem>
                     </Pagination>
                   </nav>
+<<<<<<< HEAD
                 </CardFooter>
               </Card>
             </div>
@@ -1054,6 +1137,30 @@ class Tables extends React.Component {
                         </UncontrolledDropdown>
                       </td>
                     </tr>
+=======
+                </CardFooter>
+              </Card>
+            </div>
+          </Row>
+          <Row className="mt-5">
+            <div className="col">
+              <Card className="shadow">
+                <CardHeader className="border-0">
+                  <h3 className="mb-0">Conteúdos</h3>
+                </CardHeader>
+                <Table className="align-items-center table-flush" responsive>
+                  <thead className="thead-light">
+                    <tr>
+                      <th scope="col">Título</th>
+                      <th scope="col">Data</th>
+                      <th scope="col">Mentor</th>
+                      <th scope="col">Cidade</th>
+                      <th scope="col">Alunos</th>
+                      <th scope="col" />
+                    </tr>
+                  </thead>
+                  <tbody>
+>>>>>>> mentor
                     <tr>
                       <th scope="row">
                         <Media className="align-items-center">
@@ -1064,16 +1171,25 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
+<<<<<<< HEAD
                               src={require("assets/img/theme/angular.jpg")}
+=======
+                              src={require("assets/img/theme/bootstrap.jpg")}
+>>>>>>> mentor
                             />
                           </a>
                           <Media>
                             <span className="mb-0 text-sm">
+<<<<<<< HEAD
                               Angular Now UI Kit PRO
+=======
+                              Introdução a Web
+>>>>>>> mentor
                             </span>
                           </Media>
                         </Media>
                       </th>
+<<<<<<< HEAD
                       <td>$1,800 USD</td>
                       <td>
                         <Badge color="" className="badge-dot">
@@ -1087,6 +1203,15 @@ class Tables extends React.Component {
                             className="avatar avatar-sm"
                             href="#pablo"
                             id="tooltip188614932"
+=======
+                      <td>29 de Janeiro, 2020</td>
+                      <td>
+                        <Media className="align-items-center">
+                          <a
+                            className="avatar avatar-sm mr-3"
+                            href="#pablo"
+                            id="tooltip742438047"
+>>>>>>> mentor
                             onClick={e => e.preventDefault()}
                           >
                             <img
@@ -1095,6 +1220,7 @@ class Tables extends React.Component {
                               src={require("assets/img/theme/team-1-800x800.jpg")}
                             />
                           </a>
+<<<<<<< HEAD
                           <UncontrolledTooltip
                             delay={0}
                             target="tooltip188614932"
@@ -1167,6 +1293,21 @@ class Tables extends React.Component {
                               barClassName="bg-success"
                             />
                           </div>
+=======
+                          <Media>
+                            <span className="mb-0 text-sm">     
+                                João da Silva
+                            </span>
+                          </Media>
+                        </Media>
+                      </td>
+                      <td>
+                        Maceió, AL
+                      </td>
+                      <td>
+                        <div className="d-flex align-items-center">
+                          23
+>>>>>>> mentor
                         </div>
                       </td>
                       <td className="text-right">
@@ -1214,16 +1355,25 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
+<<<<<<< HEAD
                               src={require("assets/img/theme/sketch.jpg")}
+=======
+                              src={require("assets/img/theme/bootstrap.jpg")}
+>>>>>>> mentor
                             />
                           </a>
                           <Media>
                             <span className="mb-0 text-sm">
+<<<<<<< HEAD
                               Black Dashboard
+=======
+                              Introdução a Web
+>>>>>>> mentor
                             </span>
                           </Media>
                         </Media>
                       </th>
+<<<<<<< HEAD
                       <td>$3,150 USD</td>
                       <td>
                         <Badge color="" className="badge-dot mr-4">
@@ -1237,6 +1387,15 @@ class Tables extends React.Component {
                             className="avatar avatar-sm"
                             href="#pablo"
                             id="tooltip707904950"
+=======
+                      <td>29 de Janeiro, 2020</td>
+                      <td>
+                        <Media className="align-items-center">
+                          <a
+                            className="avatar avatar-sm mr-3"
+                            href="#pablo"
+                            id="tooltip742438047"
+>>>>>>> mentor
                             onClick={e => e.preventDefault()}
                           >
                             <img
@@ -1245,6 +1404,7 @@ class Tables extends React.Component {
                               src={require("assets/img/theme/team-1-800x800.jpg")}
                             />
                           </a>
+<<<<<<< HEAD
                           <UncontrolledTooltip
                             delay={0}
                             target="tooltip707904950"
@@ -1317,6 +1477,21 @@ class Tables extends React.Component {
                               barClassName="bg-danger"
                             />
                           </div>
+=======
+                          <Media>
+                            <span className="mb-0 text-sm">     
+                                João da Silva
+                            </span>
+                          </Media>
+                        </Media>
+                      </td>
+                      <td>
+                        Maceió, AL
+                      </td>
+                      <td>
+                        <div className="d-flex align-items-center">
+                          23
+>>>>>>> mentor
                         </div>
                       </td>
                       <td className="text-right">
@@ -1364,16 +1539,25 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
+<<<<<<< HEAD
                               src={require("assets/img/theme/react.jpg")}
+=======
+                              src={require("assets/img/theme/bootstrap.jpg")}
+>>>>>>> mentor
                             />
                           </a>
                           <Media>
                             <span className="mb-0 text-sm">
+<<<<<<< HEAD
                               React Material Dashboard
+=======
+                              Introdução a Web
+>>>>>>> mentor
                             </span>
                           </Media>
                         </Media>
                       </th>
+<<<<<<< HEAD
                       <td>$4,400 USD</td>
                       <td>
                         <Badge color="" className="badge-dot">
@@ -1387,6 +1571,15 @@ class Tables extends React.Component {
                             className="avatar avatar-sm"
                             href="#pablo"
                             id="tooltip226319315"
+=======
+                      <td>29 de Janeiro, 2020</td>
+                      <td>
+                        <Media className="align-items-center">
+                          <a
+                            className="avatar avatar-sm mr-3"
+                            href="#pablo"
+                            id="tooltip742438047"
+>>>>>>> mentor
                             onClick={e => e.preventDefault()}
                           >
                             <img
@@ -1395,6 +1588,7 @@ class Tables extends React.Component {
                               src={require("assets/img/theme/team-1-800x800.jpg")}
                             />
                           </a>
+<<<<<<< HEAD
                           <UncontrolledTooltip
                             delay={0}
                             target="tooltip226319315"
@@ -1467,6 +1661,21 @@ class Tables extends React.Component {
                               barClassName="bg-info"
                             />
                           </div>
+=======
+                          <Media>
+                            <span className="mb-0 text-sm">     
+                                João da Silva
+                            </span>
+                          </Media>
+                        </Media>
+                      </td>
+                      <td>
+                        Maceió, AL
+                      </td>
+                      <td>
+                        <div className="d-flex align-items-center">
+                          23
+>>>>>>> mentor
                         </div>
                       </td>
                       <td className="text-right">
@@ -1514,16 +1723,25 @@ class Tables extends React.Component {
                           >
                             <img
                               alt="..."
+<<<<<<< HEAD
                               src={require("assets/img/theme/vue.jpg")}
+=======
+                              src={require("assets/img/theme/bootstrap.jpg")}
+>>>>>>> mentor
                             />
                           </a>
                           <Media>
                             <span className="mb-0 text-sm">
+<<<<<<< HEAD
                               Vue Paper UI Kit PRO
+=======
+                              Introdução a Web
+>>>>>>> mentor
                             </span>
                           </Media>
                         </Media>
                       </th>
+<<<<<<< HEAD
                       <td>$2,200 USD</td>
                       <td>
                         <Badge color="" className="badge-dot mr-4">
@@ -1537,6 +1755,15 @@ class Tables extends React.Component {
                             className="avatar avatar-sm"
                             href="#pablo"
                             id="tooltip781594051"
+=======
+                      <td>29 de Janeiro, 2020</td>
+                      <td>
+                        <Media className="align-items-center">
+                          <a
+                            className="avatar avatar-sm mr-3"
+                            href="#pablo"
+                            id="tooltip742438047"
+>>>>>>> mentor
                             onClick={e => e.preventDefault()}
                           >
                             <img
@@ -1545,6 +1772,7 @@ class Tables extends React.Component {
                               src={require("assets/img/theme/team-1-800x800.jpg")}
                             />
                           </a>
+<<<<<<< HEAD
                           <UncontrolledTooltip
                             delay={0}
                             target="tooltip781594051"
@@ -1617,6 +1845,21 @@ class Tables extends React.Component {
                               barClassName="bg-danger"
                             />
                           </div>
+=======
+                          <Media>
+                            <span className="mb-0 text-sm">     
+                                João da Silva
+                            </span>
+                          </Media>
+                        </Media>
+                      </td>
+                      <td>
+                        Maceió, AL
+                      </td>
+                      <td>
+                        <div className="d-flex align-items-center">
+                          23
+>>>>>>> mentor
                         </div>
                       </td>
                       <td className="text-right">
@@ -1656,6 +1899,61 @@ class Tables extends React.Component {
                     </tr>
                   </tbody>
                 </Table>
+<<<<<<< HEAD
+=======
+                <CardFooter className="py-4">
+                  <nav aria-label="...">
+                    <Pagination
+                      className="pagination justify-content-end mb-0"
+                      listClassName="justify-content-end mb-0"
+                    >
+                      <PaginationItem className="disabled">
+                        <PaginationLink
+                          href="#pablo"
+                          onClick={e => e.preventDefault()}
+                          tabIndex="-1"
+                        >
+                          <i className="fas fa-angle-left" />
+                          <span className="sr-only">Previous</span>
+                        </PaginationLink>
+                      </PaginationItem>
+                      <PaginationItem className="active">
+                        <PaginationLink
+                          href="#pablo"
+                          onClick={e => e.preventDefault()}
+                        >
+                          1
+                        </PaginationLink>
+                      </PaginationItem>
+                      <PaginationItem>
+                        <PaginationLink
+                          href="#pablo"
+                          onClick={e => e.preventDefault()}
+                        >
+                          2 <span className="sr-only">(current)</span>
+                        </PaginationLink>
+                      </PaginationItem>
+                      <PaginationItem>
+                        <PaginationLink
+                          href="#pablo"
+                          onClick={e => e.preventDefault()}
+                        >
+                          3
+                        </PaginationLink>
+                      </PaginationItem>
+                      <PaginationItem>
+                        <PaginationLink
+                          href="#pablo"
+                          onClick={e => e.preventDefault()}
+                        >
+                          <i className="fas fa-angle-right" />
+                          <span className="sr-only">Next</span>
+                        </PaginationLink>
+                      </PaginationItem>
+                    </Pagination>
+                  </nav>
+                </CardFooter>
+>>>>>>> mentor
               </Card>
             </div>
           </Row>
