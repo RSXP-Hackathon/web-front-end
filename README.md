@@ -1,1 +1,2 @@
-# web-front-end
+# main-project
+Rocketseat hackathon project development.
