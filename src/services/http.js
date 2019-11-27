@@ -1,7 +1,7 @@
 import Axios from "axios";
 
-const Client = Axios.defaults = {
+const http = Axios.create({
   baseURL: 'http://api.com.br',
-};
+});
 
-export default Client;
+export default http;
