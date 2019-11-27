@@ -25,7 +25,6 @@ import { Line, Bar } from "react-chartjs-2";
 
 // reactstrap components
 import {
-  Badge,
   Card,
   Col,
   CardBody,
@@ -39,14 +38,12 @@ import {
   Pagination,
   PaginationItem,
   PaginationLink,
-  Progress,
   Table,
   Container,
   Nav,
   NavItem,
   NavLink,
   Row,
-  UncontrolledTooltip
 } from "reactstrap";
 
 // core components

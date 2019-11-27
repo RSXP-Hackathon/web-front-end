@@ -19,37 +19,27 @@ import React, { useState, useEffect } from "react";
 
 // reactstrap components
 import {
-  Badge,
   Card,
   CardHeader,
   CardFooter,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  Media,
   Pagination,
   PaginationItem,
   PaginationLink,
-  Progress,
   Table,
   Container,
   Row,
-  UncontrolledTooltip
 } from "reactstrap";
 // core components
 import http from "../../services/http";
+import events from '../../services/mocks/events.mock';
 import Header from "components/Headers/EmpresaHeader.jsx";
 import LineItemEvento from "./components/LineItemEvento";
 
 const Tables = () => {
-  const [eventos, setEventos] = useState([]);
+  const [eventos, setEventos] = useState(events);
   
   useEffect(() => {
-    return async () => {
-      const data = await http.get('eventos');
-      setEventos(data);
-    };
+    http.get('event').then(response => setEventos(response.data));
   }, []);
 
     return (
@@ -78,7 +68,7 @@ const Tables = () => {
                   <tbody>
                   {(
                     eventos.length > 0
-                    && eventos.map(evento => <LineItemEvento data={evento} />)
+                    && eventos.map(evento => <LineItemEvento data={evento} key={evento._id} />)
                   ) || (<tr><th colSpan="6" className="text-center">Nenhum evento adicionado</th></tr>)}
                   </tbody>
                 </Table>

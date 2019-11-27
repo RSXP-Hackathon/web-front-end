@@ -6,9 +6,11 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
 } from 'reactstrap';
+import moment from 'moment';
 
-export default (props) => (
-  <tr>
+export default ({ data }) => {
+  return (
+  <tr key={data._id}>
     <th scope="row">
       <Media className="align-items-center">
         <a
@@ -23,12 +25,12 @@ export default (props) => (
         </a>
         <Media>
           <span className="mb-0 text-sm">
-            Introdução a Web
+            {data.title}
           </span>
         </Media>
       </Media>
     </th>
-    <td>29 de Janeiro, 2020</td>
+    <td>{moment.parseZone(data.date).format('DD/MM/YYYY')}</td>
     <td>
       <Media className="align-items-center">
         <a
@@ -45,17 +47,17 @@ export default (props) => (
         </a>
         <Media>
           <span className="mb-0 text-sm">     
-              João da Silva
+              {data.mentor || '-'}
           </span>
         </Media>
       </Media>
     </td>
     <td>
-      Maceió, AL
+      {`${data.city} - ${data.uf}`}
     </td>
     <td>
       <div className="d-flex align-items-center">
-        23
+        {Math.floor(Math.random() * 20)}
       </div>
     </td>
     <td className="text-right">
@@ -75,22 +77,11 @@ export default (props) => (
             href="#pablo"
             onClick={e => e.preventDefault()}
           >
-            Action
-          </DropdownItem>
-          <DropdownItem
-            href="#pablo"
-            onClick={e => e.preventDefault()}
-          >
-            Another action
-          </DropdownItem>
-          <DropdownItem
-            href="#pablo"
-            onClick={e => e.preventDefault()}
-          >
-            Something else here
+            Visualizar
           </DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>
     </td>
   </tr>
 );
+  };
