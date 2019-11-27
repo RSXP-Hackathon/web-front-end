@@ -16,10 +16,10 @@
 
 */
 /*eslint-disable*/
-import React from "react";
+import React from 'react';
 
 // reactstrap components
-import { Container, Row, Col, Nav, NavItem, NavLink } from "reactstrap";
+import { Container, Row, Col, Nav, NavItem, NavLink } from 'reactstrap';
 
 class Footer extends React.Component {
   render() {
@@ -28,14 +28,14 @@ class Footer extends React.Component {
         <Row className="align-items-center justify-content-xl-between">
           <Col xl="6">
             <div className="copyright text-center text-xl-left text-muted">
-              © 2018{" "}
+              © 2019{' '}
               <a
                 className="font-weight-bold ml-1"
                 href="https://www.creative-tim.com?ref=adr-admin-footer"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Creative Tim
+                Eleva
               </a>
             </div>
           </Col>
@@ -48,7 +48,7 @@ class Footer extends React.Component {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Creative Tim
+                  Eleva
                 </NavLink>
               </NavItem>
 
@@ -58,7 +58,7 @@ class Footer extends React.Component {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  About Us
+                  Sobre
                 </NavLink>
               </NavItem>
 
@@ -68,7 +68,7 @@ class Footer extends React.Component {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Blog
+                  Cursos
                 </NavLink>
               </NavItem>
 
@@ -78,7 +78,7 @@ class Footer extends React.Component {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  MIT License
+                  Parceiros
                 </NavLink>
               </NavItem>
             </Nav>

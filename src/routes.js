@@ -15,87 +15,161 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import Index from "views/Index.jsx";
-import Profile from "views/examples/Profile.jsx";
-import Maps from "views/examples/Maps.jsx";
-import Register from "views/examples/Register.jsx";
-import Login from "views/examples/Login.jsx";
-import Tables from "views/examples/Tables.jsx";
-import Icons from "views/examples/Icons.jsx";
-import Empresa from "views/examples/Empresa.jsx";
-import Mentor from "views/examples/Mentor.jsx";
-import Aluno from "views/examples/Aluno.jsx";
+import Index from 'views/Index.jsx';
+import Profile from 'views/examples/Profile.jsx';
+import Maps from 'views/examples/Maps.jsx';
+import Register from 'views/examples/Register.jsx';
+import Login from 'views/examples/Login.jsx';
+import Tables from 'views/examples/Tables.jsx';
+import Icons from 'views/examples/Icons.jsx';
+import Empresa from 'views/Empresa';
+import VincularMentor from 'views/Empresa/VincularMentor';
+import Eleva from 'views/Eleva';
+import Mentor from 'views/Mentor';
+import Aluno from 'views/Aluno';
 
-var routes = [
-  {
-    path: "/index",
-    name: "Empresa",
-    icon: "ni ni-tv-2 text-primary",
-    component: Empresa,
-    layout: "/admin"
-  },
-  {
-    path: "/mentor",
-    name: "Mentor",
-    icon: "ni ni-planet text-blue",
-    component: Mentor,
-    layout: "/admin"
-  },
-  {
-    path: "/aluno",
-    name: "Aluno",
-    icon: "ni ni-pin-3 text-orange",
-    component: Aluno,
-    layout: "/admin"
-  },
-  {
-    path: "/index",
-    name: "Dashboard",
-    icon: "ni ni-tv-2 text-primary",
-    component: Index,
-    layout: "/admin"
-  },
-  {
-    path: "/icons",
-    name: "Icons",
-    icon: "ni ni-planet text-blue",
-    component: Icons,
-    layout: "/admin"
-  },
-  {
-    path: "/maps",
-    name: "Maps",
-    icon: "ni ni-pin-3 text-orange",
-    component: Maps,
-    layout: "/admin"
-  },
-  {
-    path: "/user-profile",
-    name: "User Profile",
-    icon: "ni ni-single-02 text-yellow",
-    component: Profile,
-    layout: "/admin"
-  },
-  {
-    path: "/tables",
-    name: "Tables",
-    icon: "ni ni-bullet-list-67 text-red",
-    component: Tables,
-    layout: "/admin"
-  },
-  {
-    path: "/login",
-    name: "Login",
-    icon: "ni ni-key-25 text-info",
-    component: Login,
-    layout: "/auth"
-  },
-  {
-    path: "/register",
-    name: "Register",
-    icon: "ni ni-circle-08 text-pink",
-    component: Register,
-    layout: "/auth"
-  }
-];
+var routes = {
+  eleva: [
+    {
+      path: '/eleva',
+      name: 'Eleva',
+      icon: 'ni ni-tv-2 text-primary',
+      component: Eleva,
+      layout: '/admin'
+    },
+    {
+      path: '/empresas',
+      group: 'eleva',
+      name: 'Empresas',
+      icon: 'ni ni-building text-primary',
+      component: Eleva,
+      layout: '/admin'
+    },
+    {
+      path: '/eventos',
+      group: 'eleva',
+      name: 'Eventos',
+      icon: 'ni ni-calendar-grid-58 text-primary',
+      component: Eleva,
+      layout: '/admin'
+    },
+    {
+      path: '/mentores',
+      group: 'eleva',
+      name: 'Mentores',
+      icon: 'ni ni-hat-3 text-primary',
+      component: Eleva,
+      layout: '/admin'
+    },
+    {
+      path: '/alunos',
+      group: 'eleva',
+      name: 'Alunos',
+      icon: 'ni ni-user-run text-primary',
+      component: Eleva,
+      layout: '/admin'
+    },
+    {
+      path: '/vagas',
+      group: 'eleva',
+      name: 'Vagas',
+      icon: 'ni ni-briefcase-24 text-primary',
+      component: Eleva,
+      layout: '/admin'
+    },
+    {
+      path: '/cursos',
+      group: 'eleva',
+      name: 'Cursos',
+      icon: 'ni ni-books text-primary',
+      component: Eleva,
+      layout: '/admin'
+    }
+  ],
+  empresa: [
+    {
+      path: '/empresa',
+      name: 'Início',
+      icon: 'ni ni-tv-2 text-primary',
+      component: Empresa,
+      layout: '/admin'
+    },
+    {
+      path: '/empresa/novo-mentor',
+      name: 'Adotar Mentor',
+      icon: 'ni ni-tv-2 text-primary',
+      component: VincularMentor,
+      layout: '/admin'
+    }
+  ],
+  mentor: [
+    {
+      path: '/mentor',
+      name: 'Mentor',
+      icon: 'ni ni-planet text-blue',
+      component: Mentor,
+      layout: '/admin'
+    }
+  ],
+  aluno: [
+    {
+      path: '/aluno',
+      name: 'Aluno',
+      icon: 'ni ni-pin-3 text-orange',
+      component: Aluno,
+      layout: '/admin'
+    }
+  ],
+  default: [
+    {
+      path: '/index',
+      name: 'Dashboard',
+      icon: 'ni ni-tv-2 text-primary',
+      component: Index,
+      layout: '/admin'
+    },
+    {
+      path: '/icons',
+      name: 'Icons',
+      icon: 'ni ni-planet text-blue',
+      component: Icons,
+      layout: '/admin'
+    },
+    {
+      path: '/maps',
+      name: 'Maps',
+      icon: 'ni ni-pin-3 text-orange',
+      component: Maps,
+      layout: '/admin'
+    },
+    {
+      path: '/user-profile',
+      name: 'User Profile',
+      icon: 'ni ni-single-02 text-yellow',
+      component: Profile,
+      layout: '/admin'
+    },
+    {
+      path: '/tables',
+      name: 'Tables',
+      icon: 'ni ni-bullet-list-67 text-red',
+      component: Tables,
+      layout: '/admin'
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      icon: 'ni ni-key-25 text-info',
+      component: Login,
+      layout: '/auth'
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      icon: 'ni ni-circle-08 text-pink',
+      component: Register,
+      layout: '/auth'
+    }
+  ]
+};
 export default routes;

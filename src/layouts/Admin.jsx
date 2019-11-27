@@ -25,6 +25,7 @@ import AdminFooter from "components/Footers/AdminFooter.jsx";
 import Sidebar from "components/Sidebar/Sidebar.jsx";
 
 import routes from "routes.js";
+import users from "users.js";
 
 class Admin extends React.Component {
   componentDidUpdate(e) {
@@ -40,6 +41,7 @@ class Admin extends React.Component {
             path={prop.layout + prop.path}
             component={prop.component}
             key={key}
+            exact
           />
         );
       } else {
@@ -47,24 +49,27 @@ class Admin extends React.Component {
       }
     });
   };
-  getBrandText = path => {
-    for (let i = 0; i < routes.length; i++) {
+  getUserData = (group) => {
+    return users[group];
+  };
+  getBrandText = (path, group) => {
+    for (let i = 0; i < routes[group].length; i++) {
       if (
         this.props.location.pathname.indexOf(
-          routes[i].layout + routes[i].path
+          routes[group][i].layout + routes[group][i].path
         ) !== -1
       ) {
-        return routes[i].name;
+        return routes[group][i].name;
       }
     }
-    return "Brand";
+    return "Eleva";
   };
   render() {
     return (
       <>
         <Sidebar
           {...this.props}
-          routes={routes}
+          routes={routes[this.props.routeGroup]}
           logo={{
             innerLink: "/admin/index",
             imgSrc: require("assets/img/brand/argon-react.png"),
@@ -74,9 +79,10 @@ class Admin extends React.Component {
         <div className="main-content" ref="mainContent">
           <AdminNavbar
             {...this.props}
-            brandText={this.getBrandText(this.props.location.pathname)}
+            usuarioLogado={this.getUserData(this.props.routeGroup)}
+            brandText={this.getBrandText(this.props.location.pathname,  this.props.routeGroup)}
           />
-          <Switch>{this.getRoutes(routes)}</Switch>
+          <Switch>{this.getRoutes(routes[this.props.routeGroup])}</Switch>
           <Container fluid>
             <AdminFooter />
           </Container>

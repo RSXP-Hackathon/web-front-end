@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/creativetimofficial/argon-dashboard-react/issues"
   },
-  "homepage": "https://demos.creative-tim.com/argon-dashboard-react/",
+  "homepage": "http://eleva.ml/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -43,9 +43,10 @@
     "not op_mini all"
   ],
   "dependencies": {
+    "axios": "^0.19.0",
     "chart.js": "2.7.3",
     "classnames": "2.2.6",
-    "moment": "2.24.0",
+    "moment": "^2.24.0",
     "node-sass": "4.11.0",
     "nouislider": "13.1.1",
     "react": "16.8.4",
