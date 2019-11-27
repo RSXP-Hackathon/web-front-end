@@ -1,6 +1,6 @@
 # Eleva.ml
 
-Projeto de desenvolvimento da API back-end da plataforma ELEVA.ml
+Projeto de desenvolvimento do front-end da plataforma ELEVA.ml
 
 ## A Eleva
 
