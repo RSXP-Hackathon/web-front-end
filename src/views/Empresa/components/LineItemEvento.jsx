@@ -47,7 +47,7 @@ export default ({ data }) => {
         </a>
         <Media>
           <span className="mb-0 text-sm">     
-              {data.mentor || '-'}
+              {data.mentor || 'João da Silva'}
           </span>
         </Media>
       </Media>

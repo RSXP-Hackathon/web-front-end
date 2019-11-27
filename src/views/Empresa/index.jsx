@@ -39,7 +39,7 @@ const Tables = () => {
   const [eventos, setEventos] = useState(events);
   
   useEffect(() => {
-    http.get('event').then(response => setEventos(response.data));
+    http.get('event').then(({ data }) => setEventos(data.data));
   }, []);
 
     return (

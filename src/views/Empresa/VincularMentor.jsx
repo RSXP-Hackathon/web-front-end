@@ -36,7 +36,8 @@ import {
   Row,
   Input,
 } from "reactstrap";
-// core components
+
+import mentores from '../../services/mocks/mentor.mock';
 import Header from "components/Headers/DefaultHeader.jsx";
 
 class Tables extends React.Component {
@@ -81,7 +82,7 @@ class Tables extends React.Component {
                   </thead>
                   <tbody>
                   {
-                    [,,,,,].fill({}).map(() =>
+                    mentores.map((mentor) =>
                     <tr>
                       <th scope="row">
                         <Media className="align-items-center">
@@ -99,16 +100,16 @@ class Tables extends React.Component {
                           </a>
                           <Media>
                             <span className="mb-0 text-sm">     
-                                João da Silva
+                                {mentor.name}
                             </span>
                           </Media>
                         </Media>
                       </th>
                       <td>
-                        Desenvolvedor Web
+                        {mentor.speciality}
                       </td>
                       <td>
-                        Maceió, AL
+                        {`${mentor.city} - ${mentor.uf}`}
                       </td>
                       <td>
                         <Media className="align-items-center">
